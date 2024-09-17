@@ -1,0 +1,4 @@
+repository "quantum.unity@inartstudio@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"

@@ -1,0 +1,63 @@
+struct PlayerColor {
+    Int32 R;
+    Int32 G;
+    Int32 B;
+    Int32 A;
+}
+
+struct WireBugStatus{
+    bool Available;
+    FP CoolCount;
+}
+
+
+struct PlayerAttribution
+{
+    int Health;
+    int MaxHealth;
+    int Energy;
+    int MaxEnergy;
+    int WireTotalNum;
+    int WireMaxNum;
+    FP WireCountDown;
+}
+
+struct PlayerState
+{
+    bool InputAble;
+
+    bool IsFieldExhaust;
+    bool IsPlayerLocomotion;
+    bool IsPlayerScroll;
+    bool IsWireCombine;
+    bool IsWireUp;
+    bool IsWireDown;
+    bool IsWireLeft;
+    bool IsWireRight;
+    bool IsWireForward;
+    bool IsWiringJumpable;
+    bool IsFalling;
+    bool IsGrounded;
+
+    bool IsWiring;
+    bool IsJumping;
+}
+
+component PlayerLink {
+    player_ref PlayerRef;
+    short InputDirctionX;
+    short InputDirctionY;
+    FPVector3 ForwardTo;
+
+    PlayerAttribution Attribution;
+    PlayerState State;
+    PlayerColor Color;
+}
+
+
+component WireBug {
+    player_ref PlayerRef;
+    EntityRef Entity;
+    [FreeOnComponentRemoved] list<WireBugStatus> WireBugStatus;
+    bool Interactable;
+}

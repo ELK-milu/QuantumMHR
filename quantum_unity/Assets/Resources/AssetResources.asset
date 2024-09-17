@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd8e95ae0daaec4496511105240e8a3, type: 3}
+  m_Name: AssetResources
+  m_EditorClassIdentifier: 
+  AssetBundlesGroup:
+    _resources: []
+  ResourcesGroup:
+    _resources:
+    - Path: Resources/DB/Configs/DefaultPhysicsMaterial
+      AssetRef:
+        Id:
+          Value: 1
+      ResourcePath: DB/Configs/DefaultPhysicsMaterial
+    - Path: Resources/DB/Configs/DefaultNavMeshAgentConfig
+      AssetRef:
+        Id:
+          Value: 2
+      ResourcePath: DB/Configs/DefaultNavMeshAgentConfig
+    - Path: Resources/DB/Configs/DefaultCharacterController2D
+      AssetRef:
+        Id:
+          Value: 3
+      ResourcePath: DB/Configs/DefaultCharacterController2D
+    - Path: Resources/DB/Configs/SimulationConfig
+      AssetRef:
+        Id:
+          Value: 5
+      ResourcePath: DB/Configs/SimulationConfig
+    - Path: Resources/DB/CharacterControllerEntity|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 545675346118789083
+      ResourcePath: DB/CharacterControllerEntity
+    - Path: Resources/DB/Map1_mesh
+      AssetRef:
+        Id:
+          Value: 810189026489540597
+      ResourcePath: DB/Map1_mesh
+    - Path: Resources/DB/GameSessionEntity|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 1014643387157061958
+      ResourcePath: DB/GameSessionEntity
+    - Path: Resources/DB/MainCharacterPureEntity|EntityView
+      AssetRef:
+        Id:
+          Value: 1051847754901400431
+      ResourcePath: DB/MainCharacterPureEntity
+    - Path: Resources/DB/Prefab/SphereEntity|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 1162644317166524283
+      ResourcePath: DB/Prefab/SphereEntity
+    - Path: Resources/DB/Configs/DefaultCharacterController3D
+      AssetRef:
+        Id:
+          Value: 1435480023204607406
+      ResourcePath: DB/Configs/DefaultCharacterController3D
+    - Path: Resources/DB/Map1
+      AssetRef:
+        Id:
+          Value: 1710471675203725834
+      ResourcePath: DB/Map1
+    - Path: Resources/DB/GameSessionEntity|EntityView
+      AssetRef:
+        Id:
+          Value: 2121997891734763309
+      ResourcePath: DB/GameSessionEntity
+    - Path: Resources/DB/Configs/TestCharacterController3D 1
+      AssetRef:
+        Id:
+          Value: 2574026477552684456
+      ResourcePath: DB/Configs/TestCharacterController3D 1
+    - Path: Resources/DB/Prefab/SphereEntity|EntityView
+      AssetRef:
+        Id:
+          Value: 3096043871321067371
+      ResourcePath: DB/Prefab/SphereEntity
+    - Path: Resources/DB/WireBeam|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 3125539401699648029
+      ResourcePath: DB/WireBeam
+    - Path: Resources/DB/MainCharacterEntity|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 3504149626567795519
+      ResourcePath: DB/MainCharacterEntity
+    - Path: Resources/DB/Character Variant|EntityView
+      AssetRef:
+        Id:
+          Value: 3960687529024298394
+      ResourcePath: DB/Character Variant
+    - Path: Resources/DB/Character Variant|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 4000101132805284288
+      ResourcePath: DB/Character Variant
+    - Path: Resources/DB/WireBeam|EntityView
+      AssetRef:
+        Id:
+          Value: 4072568625657498648
+      ResourcePath: DB/WireBeam
+    - Path: Resources/DB/MainCharacterPureEntity|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 4081959358193269598
+      ResourcePath: DB/MainCharacterPureEntity
+    - Path: Resources/DB/CharacterControllerEntity|EntityView
+      AssetRef:
+        Id:
+          Value: 4229469295610622048
+      ResourcePath: DB/CharacterControllerEntity
+    - Path: Resources/DB/MainCharacterEntity|EntityView
+      AssetRef:
+        Id:
+          Value: 4234430826070371866
+      ResourcePath: DB/MainCharacterEntity

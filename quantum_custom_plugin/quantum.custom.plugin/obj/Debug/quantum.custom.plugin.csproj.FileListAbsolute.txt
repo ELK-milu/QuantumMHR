@@ -1,0 +1,7 @@
+F:\U3Dexample\test\3DARPGdemo\StepLockQuantumECS\Client\quantum_custom_plugin\Photon-Server\deploy\Plugins\DeterministicPlugin\bin\quantum.custom.plugin.dll
+F:\U3Dexample\test\3DARPGdemo\StepLockQuantumECS\Client\quantum_custom_plugin\Photon-Server\deploy\Plugins\DeterministicPlugin\bin\quantum.custom.plugin.pdb
+F:\U3Dexample\test\3DARPGdemo\StepLockQuantumECS\Client\quantum_custom_plugin\quantum.custom.plugin\obj\Debug\quantum.custom.plugin.csproj.AssemblyReference.cache
+F:\U3Dexample\test\3DARPGdemo\StepLockQuantumECS\Client\quantum_custom_plugin\quantum.custom.plugin\obj\Debug\quantum.custom.plugin.csproj.CoreCompileInputs.cache
+F:\U3Dexample\test\3DARPGdemo\StepLockQuantumECS\Client\quantum_custom_plugin\quantum.custom.plugin\obj\Debug\quantum.custom.plugin.csproj.CopyComplete
+F:\U3Dexample\test\3DARPGdemo\StepLockQuantumECS\Client\quantum_custom_plugin\quantum.custom.plugin\obj\Debug\quantum.custom.plugin.dll
+F:\U3Dexample\test\3DARPGdemo\StepLockQuantumECS\Client\quantum_custom_plugin\quantum.custom.plugin\obj\Debug\quantum.custom.plugin.pdb

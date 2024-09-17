@@ -1,0 +1,7 @@
+﻿enum GameState
+{
+	Countdown,
+	Playing,
+	Paused,
+	GameOver
+}

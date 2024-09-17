@@ -1,0 +1,3 @@
+﻿signal OnResetStatus(entity_ref EntityRef);
+signal OnWireUse(player_ref player);
+signal OnJump(entity_ref player);

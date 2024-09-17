@@ -1,0 +1,14 @@
+input {
+    short DirctionX;
+    short DirctionY;
+    button Scroll;
+    button Dash;
+    button WireCombine;
+    button WireUp;
+    button WireDown;
+    button WireLeft;
+    button WireRight;
+    button WireForward;
+    button TEST;
+
+}

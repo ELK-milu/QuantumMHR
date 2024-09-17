@@ -1,0 +1,61 @@
+﻿event TransformSyncEvent 
+{
+  FPVector3 Position;
+  FPVector3 Direction;
+}
+// event的使用方便Unity中使用QuantumEvent.Subscribe<EventOnXXX>(this, Method);来监听事件并注册委托
+
+
+
+event OnPlayerStateSync{
+    PlayerRef PlayerRef;
+}
+
+// 按键事件消息
+event OnPlayerRespawn {
+    PlayerRef PlayerRef;
+}
+
+event OnPlayerJump {
+    PlayerRef PlayerRef;
+}
+
+event OnPlayerScroll {
+    PlayerRef PlayerRef;
+}
+
+event OnPlayerWireCombine {
+    PlayerRef PlayerRef;
+    bool flag;
+}
+
+event OnPlayerWireUp {
+    PlayerRef PlayerRef;
+}
+
+event OnPlayerWireDown {
+    PlayerRef PlayerRef;
+}
+
+event OnPlayerWireLeft {
+    PlayerRef PlayerRef;
+}
+
+event OnPlayerWireRight {
+    PlayerRef PlayerRef;
+}
+
+event OnPlayerWireForward {
+    PlayerRef PlayerRef;
+}
+
+
+event OnPlayerSetWire {
+    PlayerRef PlayerRef;
+    bool flag;
+}
+
+event OnPlayerExhaust {
+    PlayerRef PlayerRef;
+    bool flag;
+}
