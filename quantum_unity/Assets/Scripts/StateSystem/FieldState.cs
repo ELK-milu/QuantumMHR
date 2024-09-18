@@ -30,6 +30,11 @@ namespace StatePattern.PlayerState
 		{
 		}
 
+		public override void LaterUpdate()
+		{
+			
+		}
+
 		public override void OnExit()
 		{
 		}

@@ -5,6 +5,7 @@ namespace StatePattern.StateSystem
 		void OnEnter();
 		void Update();
 		void FixedUpdate();
+		void LaterUpdate();
 		void OnExit();
 	}
 

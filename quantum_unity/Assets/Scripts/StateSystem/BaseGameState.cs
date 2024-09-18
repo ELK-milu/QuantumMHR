@@ -8,6 +8,7 @@ namespace StatePattern.StateSystem
 		public event Action OnEnterEventHandler;
 		public event Action OnUpdateEventHandler;
 		public event Action OnFixedUpdateEventHandler;
+		public event Action OnLaterUpdateEventHandler;
 		public event Action OnExitEventHandler;
 
 		public virtual void OnEnter()
@@ -23,6 +24,11 @@ namespace StatePattern.StateSystem
 		public virtual void FixedUpdate()
 		{
 			OnFixedUpdateEventHandler?.Invoke();
+		}
+
+		public void LaterUpdate()
+		{
+			OnLaterUpdateEventHandler?.Invoke();
 		}
 
 		public virtual void OnExit()

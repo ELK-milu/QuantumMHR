@@ -123,26 +123,34 @@ public unsafe class PlayerHandler : PlayerController
 	#endregion
 
 	#region Mono
-	private void Update()
-	{
-		GetQuantumInfo();
-		OnFrameUpdateHandler?.Invoke(_frame);
-		StateMachineStatusUpdate(_playerLink,_movement);
-		PlayerStateMachine._stateMachine.Update();
-		if (!PlayerStateMachine.IsMaster)
-		{
-			transform.position = _animator.transform.position;
-			transform.rotation = _animator.transform.rotation;
-		}
-	}
-	
+
+	// 获取Quantum的固定Update时长进行更新
+	private FP localTime = 0;
 	private void FixedUpdate()
 	{
-		if (!PlayerStateMachine.IsMaster)
+		if (localTime != 0)
 		{
-			ResetTransform();
+			PlayerStateMachine._stateMachine.FidedUpdate();
+			if (!PlayerStateMachine.IsMaster)
+			{
+				ResetTransform();
+			}
+			OnFrameUpdateHandler?.Invoke(_frame);
+			StateMachineStatusUpdate(_playerLink,_movement);
+			PlayerStateMachine._stateMachine.Update();
+			if (!PlayerStateMachine.IsMaster)
+			{
+				transform.position = _animator.transform.position;
+				transform.rotation = _animator.transform.rotation;
+			}
+			localTime = 0;
 		}
-		PlayerStateMachine._stateMachine.FidedUpdate();
+	}
+
+	public override void OnUpdateView(QuantumGame game)
+	{
+		base.OnUpdateView(game);
+		GetQuantumInfo();
 	}
 	
 	private void GetQuantumInfo()
@@ -152,6 +160,10 @@ public unsafe class PlayerHandler : PlayerController
 		_playerLink = _frame.Get<PlayerLink>(_entityView.EntityRef);
 		_playerRef = _playerLink.PlayerRef;
 		_movement = _frame.Get<CharacterController3D>(_entityView.EntityRef);
+		if (localTime == 0)
+		{
+			localTime = _frame.DeltaTime;
+		}
 	}
 	#endregion
 

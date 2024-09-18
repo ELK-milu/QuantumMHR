@@ -17,8 +17,6 @@ public class BtnStatusManager : MonoBehaviour,IPointerEnterHandler,IPointerExitH
         _btn = GetComponent<Button>();
     }
     
-    
-    
     public void OnPointerEnter (PointerEventData eventData)
     {
         if(!_btn.interactable) return;

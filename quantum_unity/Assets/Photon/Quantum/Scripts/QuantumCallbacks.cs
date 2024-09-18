@@ -8,7 +8,6 @@ using UnityEngine;
 public abstract class QuantumCallbacks : MonoBehaviour {
   [StaticField]
   public static readonly List<QuantumCallbacks> Instances = new List<QuantumCallbacks>();
-
   protected virtual void OnEnable() {
     Instances.Add(this);
   }

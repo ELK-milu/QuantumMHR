@@ -7,18 +7,27 @@ namespace StatePattern.PlayerState
 		public BattleState(PlayerHandler playerController, Animator animator) : base(playerController, animator) { }
 		public override void OnEnter()
 		{
+			throw new System.NotImplementedException();
 		}
 
 		public override void Update()
 		{
+			throw new System.NotImplementedException();
 		}
 
 		public override void FixedUpdate()
 		{
+			throw new System.NotImplementedException();
+		}
+
+		public override void LaterUpdate()
+		{
+			throw new System.NotImplementedException();
 		}
 
 		public override void OnExit()
 		{
+			throw new System.NotImplementedException();
 		}
 	}
 	public class G_sword_skill_02_move2r_State : BattleState

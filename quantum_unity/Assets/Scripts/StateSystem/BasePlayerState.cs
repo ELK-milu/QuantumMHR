@@ -62,6 +62,8 @@ namespace StatePattern.PlayerState
 		public abstract void Update();
 
 		public abstract void FixedUpdate();
+		public abstract void LaterUpdate();
+
 
 		public abstract void OnExit();
 	}

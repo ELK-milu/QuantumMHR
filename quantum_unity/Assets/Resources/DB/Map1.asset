@@ -127,6 +127,7 @@ MonoBehaviour:
     MapEntities: []
   Prototypes:
   - GameSession: []
+    InputReceiver: []
     PlayerLink: []
     Respawn: []
     WireBug: []
@@ -223,6 +224,7 @@ MonoBehaviour:
   - GameSession:
     - TimeUntilStart:
         RawValue: 65536
+    InputReceiver: []
     PlayerLink: []
     Respawn: []
     WireBug: []
